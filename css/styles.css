@@ -533,14 +533,14 @@ address {
 }
 .modal {
   width: 408px;
-  min-height: 576px;
+  height: 584px;
   border-radius: 4px;
   background-color: var(--modal-color);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  padding: 24px;
+  padding: 72px 24px 24px;
   transition: transform var(--transformation);
   position: relative;
 }
@@ -577,7 +577,7 @@ address {
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
-  margin-top: 48px;
+  /* margin-top: 48px; */
   margin-bottom: 16px;
 }
 .modal-form {
@@ -585,9 +585,15 @@ address {
 .modal-field {
   margin-bottom: 8px;
 }
+.modal-field.textarea {
+  margin-bottom: 16px;
+}
+.modal-field.checkbox {
+  margin-bottom: 24px;
+}
 .input-text {
-  display: inline-block;
-  margin-bottom: 5px;
+  display: block;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -645,7 +651,6 @@ address {
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: var(--subtle-texte);
-  margin-bottom: 24px;
   display: flex;
   align-items: center;
 }
